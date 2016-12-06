@@ -1,0 +1,19 @@
+{
+  "name": "treehouse_profile_bot",
+  "version": "0.0.1",
+  "description": "A simple bot to perform querys to treehouse profiles",
+  "main": "server.js",
+  "engines": {
+    "node": "6.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Eduardo Parra San Jose",
+  "dependencies": {
+    "botbuilder": "^3.4.4",
+    "dotenv": "^2.0.0",
+    "restify": "^4.3.0"
+  }
+}
