@@ -24,7 +24,12 @@ module.exports = {
                 profileData += buffer;
             });
             response.on("end", () => {
-                callback(JSON.parse(profileData));
+                try {
+                    profileData = JSON.parse(profileData);
+                    callback(profileData);
+                } catch (exception) {
+                    callback({ errorMessage: exception.message });
+                }
             });
         });
 
